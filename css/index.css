@@ -1,0 +1,231 @@
+:root {
+  --mainColor: black;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 380px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.container .theMan {
+  height: 200px;
+  position: relative;
+}
+
+.container .theMan .theStage {
+  height: 100%;
+  align-items: center;
+  margin: 20px auto;
+  align-items: flex-end;
+  position: relative;
+}
+
+.container .theMan .theStage span:nth-child(1) {
+  width: 55px;
+  height: 5px;
+  left: 21.5px;
+  position: relative;
+  background-color: var(--mainColor);
+}
+
+.container .theMan .theStage span:nth-child(2) {
+  width: 5px;
+  height: 200px;
+  position: absolute;
+  left: 47px;
+  background-color: var(--mainColor);
+}
+
+.container .theMan .theStage span:nth-child(3) {
+  width: 110px;
+  height: 5px;
+  position: absolute;
+  top: 10px;
+  left: 50px;
+  background-color: var(--mainColor);
+}
+
+.container .theMan .theStage span:nth-child(4) {
+  width: 5px;
+  height: 35px;
+  position: absolute;
+  top: 10px;
+  left: 160px;
+  background-color: var(--mainColor);
+}
+
+.container .theMan span.ribon {
+top: 59px;
+  left: 133px;
+  width: 65px;
+  height: 65px;
+  position: absolute;
+  border: 5px dashed var(--mainColor);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.container .theMan span.head {
+top: 68px;
+  left: 141px;
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  border: 5px solid var(--mainColor);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.container .theMan span.body {
+  top: 116px;
+  left: 161px;
+  width: 5px;
+  height: 88px;
+  position: absolute;
+  background-color: var(--mainColor);
+}
+
+.container .theMan span.right-arm {
+    top: 129px;
+  left: 163px;
+  width: 45px;
+  height: 5px;
+  position: absolute;
+  background-color: var(--mainColor);
+  transform: rotate(-25deg);
+  -webkit-transform: rotate(-25deg);
+  -moz-transform: rotate(-25deg);
+  -ms-transform: rotate(-25deg);
+  -o-transform: rotate(-25deg);
+}
+
+.container .theMan span.left-arm {
+    top: 129px;
+  left: 120px;
+  width: 45px;
+  height: 5px;
+  position: absolute;
+  background-color: var(--mainColor);
+  transform: rotate(25deg);
+  -webkit-transform: rotate(25deg);
+  -moz-transform: rotate(25deg);
+  -ms-transform: rotate(25deg);
+  -o-transform: rotate(25deg);
+}
+
+.container .theMan span.right-leg {
+    top: 209px;
+  left: 161px;
+  width: 45px;
+  height: 5px;
+  position: absolute;
+  background-color: var(--mainColor);
+  transform: rotate(30deg);
+  -webkit-transform: rotate(30deg);
+  -moz-transform: rotate(30deg);
+  -ms-transform: rotate(30deg);
+  -o-transform: rotate(30deg);
+}
+
+.container .theMan span.left-leg {
+    top: 209px;
+  left: 121px;
+  width: 45px;
+  height: 5px;
+  position: absolute;
+  background-color: var(--mainColor);
+  transform: rotate(-30deg);
+  -webkit-transform: rotate(-30deg);
+  -moz-transform: rotate(-30deg);
+  -ms-transform: rotate(-30deg);
+  -o-transform: rotate(-30deg);
+}
+
+.container .alphabet {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  width: 500px;
+  align-content: center;
+}
+
+.container .alphabet span {
+  width: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: capitalize;
+  background-color: #EE626b;
+  text-align: center;
+  padding: 10px 10px;
+  cursor: pointer;
+}
+
+.theword {
+  font-size: 50px;
+  text-align: center;
+  letter-spacing: 10.5px;
+}
+
+.all {
+  display: none;
+}
+
+.popup {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #4948486e;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+.popup h1 {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+  background-color: #795548;
+  color: white;
+  font-family: cursive;
+  padding: 60px;
+  width: fit-content;
+}
+.popup:nth-child(2) h1 {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+  background-color: #4caf50;
+  color: white;
+  font-family: cursive;
+  padding: 60px;
+  width: fit-content;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
