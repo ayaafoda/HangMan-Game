@@ -1,4 +1,5 @@
 # HangMan-Game
 
-##The Website
+## The Website
+
 https://ayaafoda.github.io/HangMan-Game/
