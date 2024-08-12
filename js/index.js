@@ -58,12 +58,6 @@ document.addEventListener("click", (e) => {
     lives--;
     console.log(lives);
   }
-  // spans.forEach((dash) => {
-  //   if (dash.innerHTML == "_") {
-  //     document.querySelector(".win").style.display = "block";
-
-  //   }
-  // })
   switch (lives) {
     case 7:
       man[7 - lives].style.display = "block";
@@ -123,7 +117,7 @@ document.addEventListener("click", (e) => {
       man[5].style.display = "block";
       man[6].style.display = "block";
       man[7 - lives].style.display = "block";
-      document.querySelector(".popup")[0].style.display = "block"
+      document.querySelector(".popup").style.display = "block"
       break;
   }
 });
