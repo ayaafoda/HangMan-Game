@@ -207,7 +207,7 @@ top: 68px;
   display: none;
 }
 
-.popup h1 {
+.popup.lose h1 {
   position: relative;
   top: 50%;
   left: 50%;
@@ -219,7 +219,7 @@ top: 68px;
   padding: 60px;
   width: fit-content;
 }
-.popup:nth-child(2) h1 {
+.win h1 {
   position: relative;
   top: 50%;
   left: 50%;
